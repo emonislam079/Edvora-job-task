@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
-
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import "./Product.css"
 const Products = () => {
     const [product , setProduct]= useState([]);
     useEffect(()=>{
@@ -11,24 +11,29 @@ const Products = () => {
 
     return (
         <div>
-            <Row xs={1} md={4} className="g-4">
+            <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.map(product =><div
+                product.slice(0,3).map (product =><div
                 product ={product}
                 >
-    <Col>
-      <Card>
-        <Card.Img variant="top" src={product.image} width='70px' height='70px' />
-        <Card.Body>
-          <Card.Title>{product.product_name}</Card.Title>
-          <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-    </div>)
+
+                  <div className='Single-product'>
+                  <Container>
+                            <Row>
+                              <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
+                              <p className='location'>Location: {product.address.state}</p>
+                              </Col>
+                              <Col md={7}>
+                              <h1 className='ProductName'>{product.product_name}</h1>
+                              <h1 className='brandName'>{product.brand_name}</h1>
+                              <h1 className='price'><span>$ </span>{product.price}</h1>
+                              <h1 className='Date'><span id='date'>Date: </span>{product.date.slice(0,10)}</h1>               
+                              </Col>
+                              <p className='discription'>Discription: {product.discription}</p>
+                            </Row>
+                          </Container>
+                  </div>
+        </div>)
             }
   
     
