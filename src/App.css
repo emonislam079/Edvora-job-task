@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  background-color: #232323;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filter {
+  background-color: #131313;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 15px;
+  width: 228px;
+  height: 275px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter-left {
+  font-size: 20px;
+  color: #a5a5a5;
+  font-weight: 300;
+  padding-top: 24px;
+  margin-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hr {
+  color: #a5a5a5;
+  width: 158px;
+  border: 1px solid;
+  margin-left: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.drop {
+  background-color: #232323;
+  border-color: #232323;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-top: 12px;
+  width: 168.45px;
+  height: 37.5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 14px;
+  font-size: 35px;
+}
+.products {
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+  opacity: 50%;
+  margin-left: 14px;
+  width: 97px;
+  margin-top: 21px;
+}
+.productName {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-left: 14px;
+  margin-top: 21px;
+}
+.hr {
+  color: #a5a5a5;
+  width: 100%;
+  border: 1px solid;
+  margin-left: 14px;
 }
