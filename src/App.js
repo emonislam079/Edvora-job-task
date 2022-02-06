@@ -57,13 +57,13 @@ function App() {
 </div>
 </div>
     </Col>
-    <Col xs={12} md={9} >
+    <Col xs={12} md={9} className="Product-container" >
       <h1 className='title'>Edvora</h1>
       <h1 className='products'>Products</h1>
       <h1 className='productName'>Product Name</h1>
       <hr className='hr'></hr>
       <Products></Products>
-      <h1 className='productName'>Product Name</h1>
+      <h1 className='productName2'>Product Name</h1>
       <hr className='hr'></hr>
       <Products></Products>
     </Col>

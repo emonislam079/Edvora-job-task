@@ -40,6 +40,9 @@ hr {
   margin-left: 14px;
   font-size: 35px;
 }
+.Product-container {
+  margin-bottom: 75px;
+}
 .products {
   font-weight: 500;
   font-size: 25px;
@@ -61,4 +64,11 @@ hr {
   width: 100%;
   border: 1px solid;
   margin-left: 14px;
+}
+.productName2 {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-left: 14px;
+  margin-top: 45px;
 }
