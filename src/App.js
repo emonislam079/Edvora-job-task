@@ -11,6 +11,8 @@ import Railes from './Component/Railes';
 import Alphabet from './Component/Alphabet';
 import Gujrat from './Component/Gujrat';
 import Chhattisgarh from './Component/Chhattisgarh';
+import Sidhpur from './Component/Sidhpur';
+import Dhamtari from './Component/Dhamtari';
 
 function App() {
   
@@ -39,6 +41,12 @@ function App() {
            </Route>           
            <Route path="/chhattisgrah">
              <Chhattisgarh></Chhattisgarh>
+           </Route>           
+           <Route path="/sidhpur">
+             <Sidhpur></Sidhpur>
+           </Route>           
+           <Route path="/dhamtari">
+             <Dhamtari></Dhamtari>
            </Route>           
          </Switch>
          

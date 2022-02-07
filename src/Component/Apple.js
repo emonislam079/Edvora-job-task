@@ -47,11 +47,8 @@ const Apple = () => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu variant="dark">
-            <Dropdown.Item href="#/action-1" active>
-              Action
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            
+          <Link className='text-decoration-none ms-3 text-light d-block' to="/sidhpur">Sidhpur</Link>
+          <Link className='text-decoration-none ms-3 text-light d-block ' to="/dhamtari">Dhamtari</Link>
           </Dropdown.Menu>
         </Dropdown>
       </div>

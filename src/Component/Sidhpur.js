@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {Carousel, Col, Container, Dropdown, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../App.css'
-
-
-const Chhattisgarh = () => {
+const Sidhpur = () => {
     const [product , setProduct]= useState([]);
     useEffect(()=>{
         fetch('https://assessment-edvora.herokuapp.com/')
@@ -40,7 +38,7 @@ const Chhattisgarh = () => {
 
           <Dropdown.Menu variant="dark">
           <Link className='text-decoration-none ms-3 text-light d-block' to="/gujarat">Gujarat</Link>
-            <Link className='text-decoration-none ms-3 text-light d-block ' to="/chhattisgrah">Chhattisgarh</Link>
+          <Link className='text-decoration-none ms-3 text-light d-block ' to="/chhattisgrah">Chhattisgarh</Link>
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown className='text-center'>
@@ -66,7 +64,7 @@ const Chhattisgarh = () => {
                           <Carousel.Item>
                           <Row xs={1} md={3} className="g-4 Product-Container">
                   {
-                      product.filter(product=> product.address.state = "Chhattisgarh").slice(0,3).map(product =><div
+                      product.filter(product=> product.address.city = "Sidhpur").slice(0,3).map(product =><div
                       product ={product}
                       >
 
@@ -74,7 +72,7 @@ const Chhattisgarh = () => {
                         <Container>
                                   <Row>
                                     <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                                    <p className='location'>Location: {product.address.state}</p>
+                                    <p className='location'>Location: {product.address.city}</p>
                                     </Col>
                                     <Col md={7}>
                                     <h1 className='ProductName'>{product.product_name}</h1>
@@ -93,7 +91,7 @@ const Chhattisgarh = () => {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.address.state = "Chhattisgarh").slice(4,7).map(product =><div
+                product.filter(product=> product.address.city = "Sidhpur").slice(4,7).map(product =><div
                 product ={product}
                 >
 
@@ -101,7 +99,7 @@ const Chhattisgarh = () => {
                   <Container>
                             <Row>
                               <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                              <p className='location'>Location: {product.address.state}</p>
+                              <p className='location'>Location: {product.address.city}</p>
                               </Col>
                               <Col md={7}>
                               <h1 className='ProductName'>{product.product_name}</h1>
@@ -122,7 +120,7 @@ const Chhattisgarh = () => {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.address.state = "Chhattisgarh").slice(8,11).map(product =><div
+                product.filter(product=> product.address.city = "Sidhpur").slice(8,11).map(product =><div
                 product ={product}
                 >
 
@@ -130,7 +128,7 @@ const Chhattisgarh = () => {
                   <Container>
                             <Row>
                               <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                              <p className='location'>Location: {product.address.state}</p>
+                              <p className='location'>Location: {product.address.city}</p>
                               </Col>
                               <Col md={7}>
                               <h1 className='ProductName'>{product.product_name}</h1>
@@ -151,14 +149,14 @@ const Chhattisgarh = () => {
                     </Carousel>
             
         </div>
-      <h1 id="Chhattisgarh" className='productName2'>Products</h1>
+      <h1 id="Sidhpur" className='productName2'>Products</h1>
       <hr className='hr'></hr>
       <div>
             <Carousel>
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.address.state = "Chhattisgarh").slice(12,15).map(product =><div
+                product.filter(product=> product.address.city = "Sidhpur").slice(12,15).map(product =><div
                 product ={product}
                 >
 
@@ -166,7 +164,7 @@ const Chhattisgarh = () => {
                   <Container>
                             <Row>
                               <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                              <p className='location'>Location: {product.address.state}</p>
+                              <p className='location'>Location: {product.address.city}</p>
                               </Col>
                               <Col md={7}>
                               <h1 className='ProductName'>{product.product_name}</h1>
@@ -187,7 +185,7 @@ const Chhattisgarh = () => {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.address.state = "Chhattisgarh").slice(16,19).map(product =><div
+                product.filter(product=> product.address.city = "Sidhpur").slice(16,19).map(product =><div
                 product ={product}
                 >
 
@@ -195,7 +193,7 @@ const Chhattisgarh = () => {
                   <Container>
                             <Row>
                               <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                              <p className='location'>Location: {product.address.state}</p>
+                              <p className='location'>Location: {product.address.city}</p>
                               </Col>
                               <Col md={7}>
                               <h1 className='ProductName'>{product.product_name}</h1>
@@ -216,7 +214,7 @@ const Chhattisgarh = () => {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.address.state = "Chhattisgarh").slice(20,23).map(product =><div
+                product.filter(product=> product.address.city = "Sidhpur").slice(20,23).map(product =><div
                 product ={product}
                 >
 
@@ -224,7 +222,7 @@ const Chhattisgarh = () => {
                   <Container>
                             <Row>
                               <Col md={5}><img src={product.image} alt="" height='70px' width='70px'/>
-                              <p className='location'>Location: {product.address.state}</p>
+                              <p className='location'>Location: {product.address.city}</p>
                               </Col>
                               <Col md={7}>
                               <h1 className='ProductName'>{product.product_name}</h1>
@@ -252,4 +250,4 @@ const Chhattisgarh = () => {
     );
 };
 
-export default Chhattisgarh;
+export default Sidhpur;
