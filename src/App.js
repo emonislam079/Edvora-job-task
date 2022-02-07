@@ -100,7 +100,7 @@ function App() {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.brand_name = "Apple").slice(7,9).map(product =><div
+                product.filter(product=> product.brand_name = "Apple").slice(4,7).map(product =><div
                 product ={product}
                 >
 
@@ -129,7 +129,7 @@ function App() {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.brand_name = "Apple").slice(4,6).map(product =><div
+                product.filter(product=> product.brand_name = "Apple").slice(8,11).map(product =><div
                 product ={product}
                 >
 
@@ -194,7 +194,7 @@ function App() {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.brand_name = "Alibaba").slice(7,9).map(product =><div
+                product.filter(product=> product.brand_name = "Alibaba").slice(4,7).map(product =><div
                 product ={product}
                 >
 
@@ -223,7 +223,7 @@ function App() {
                     <Carousel.Item>
                     <Row xs={1} md={3} className="g-4 Product-Container">
             {
-                product.filter(product=> product.brand_name = "Alibaba").slice(4,6).map(product =><div
+                product.filter(product=> product.brand_name = "Alibaba").slice(8,11).map(product =><div
                 product ={product}
                 >
 
